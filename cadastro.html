@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Feira tecnológica</title>
 </head>
 <body>
@@ -11,12 +12,29 @@
 
         <nav>
             <img src="img/logo.png" alt="logo">
-            <h2>Feira tecnológica 2025</h2>
+            <h2>Cadastro</h2>
+        <div>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="contato.html">Contato</a></li>
+        </div>
+        
         </nav>
+
+        <div>
+
+            <p>Preencha com suas informações</p>
+
+            <form action="info.php" method="post">
+                Nome: <input type="text" name="nome" placeholder="Digite seu nome" required>
+                Sobrenome: <input type="text" name="sobrenome" placeholder="Digite seu nome" required>
+                E-mail: <input type="email" name="email" placeholder="Digite seu email aqui" required><br><br>
+                Data de nascimento: <input type="date" name="nascimento"><br><br>
+                <input type="submit" value="Enviar">
+            <form>
+
+        </div>
 
     </section>
 
